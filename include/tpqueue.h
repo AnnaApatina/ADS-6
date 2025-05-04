@@ -1,5 +1,5 @@
 // Copyright 2022 NNTU-CS
-#include <stdexсept>
+#include <stdexcept>
 
 #ifndef INCLUDE_TPQUEUE_H_
 #define INCLUDE_TPQUEUE_H_
@@ -32,7 +32,7 @@ class TPQueue {
       return;
     }
     Node<T>* current = head;
-    while (current->next != nullptr && 
+    while (current->next != nullptr &&
            current->next->data.prior >= sym.prior) {
       current = current->next;
     }
